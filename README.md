@@ -1,128 +1,205 @@
 # Multilingual NMT Edge Training Pipeline
 
-This repository contains a production-ready, modular Python project converted from the original notebook  
-`training_script.ipynb` (located in `notebooks/`).  
-The project implements utilities for multilingual NMT workflows including model loading, adapter utilities,
-manifest generation, quantization-ready layer summaries, and workspace packaging for deployment.
+A modular and production-ready pipeline for training, analyzing, quantizing, and packaging multilingual NMT (Neural Machine Translation) models for edge-friendly deployment.  
+The project provides tools for model inspection, layer-wise size estimation, quantization planning, dataset handling, workspace packaging, and reproducible evaluation.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-### ✔ Modular Codebase
-All notebook logic is refactored into a clean directory structure:
+### 🔹 **1. Modular Architecture**
+A clean, maintainable Python codebase organized into:
+- **Model utilities** (loading, tokenizer checks, layer summaries)
+- **Dataset and manifest tools** (JSONL creation, manifest generation)
+- **Quantization planning** (layer size estimates, quantizable layers list)
+- **Workspace packaging** for deployment
+- **Training orchestration** with CLI support
 
-- `src/model` – model & tokenizer loaders, layer size summaries  
-- `src/data` – JSONL writing, manifest generation, padding utilities  
-- `src/train.py` – demo training pipeline & workspace preparation  
-- `scripts/package_workspace.py` – package entire workspace into a zip  
-- `scripts/run_train.sh` – runnable example script  
+### 🔹 **2. Rich Metadata & Analysis Tools**
+The project generates a variety of useful analysis files:
+- `layer_sizes_summary.csv` – per-layer FP16 & int4 estimated sizes  
+- `size_estimates.json/csv` – global memory footprint estimates  
+- `quantizable_layers_list.csv` – layers compatible with quantization  
+- `model_metadata.json` – model configuration summary  
+- `tokenizer_sanity.json` – tokenizer validation  
+- `quant_test_report.json` – quantization verification  
+- `sample_layers.json` – sampled layer statistics  
 
-### ✔ NMT-Friendly Utilities
-- Generates manifests for datasets or artifacts  
-- Works with HuggingFace Transformers  
-- Provides layer-level parameter & size summaries (FP16 & int4 estimates)  
-- Supports workspace packaging for deployment on edge devices  
+These metadata files are small, version-controlled, and crucial for reproducibility.
 
-### ✔ Ready for Extension
-You can plug in:
-- Custom training loops  
-- Quantization methods  
-- Adapters / LoRA layers  
-- Efficient multilingual translation pipelines  
+### 🔹 **3. Dataset Support**
+Includes utilities for:
+- JSONL dataset creation  
+- Manifest building  
+- Language list management  
+- Support for multilingual evaluation sets such as FLORES-200
+
+*(Large datasets are not stored in the repository; only metadata such as `dataset_overview.json` is included.)*
+
+### 🔹 **4. Edge-Friendly Workflow**
+Built to support:
+- Low-precision weight formats (e.g., int4)  
+- Adapter loading and packaging  
+- Exporting and preparing workspaces for FPGA or low-resource deployment  
+- Weight/embedding manifests and inspection tools  
 
 ---
 
-## 📁 Project Structure
+## 📁 Directory Structure
 
 my_project/
 ├─ README.md
 ├─ requirements.txt
+│
 ├─ notebooks/
-│ └─ training_script.ipynb
-├─ scripts/
-│ ├─ package_workspace.py
-│ └─ run_train.sh
+│  └─ training_script.ipynb
+│
 ├─ src/
-│ ├─ main.py
-│ ├─ config.py
-│ ├─ utils.py
-│ ├─ data/
-│ │ └─ manifest_and_io.py
-│ ├─ model/
-│ │ ├─ loader.py
-│ │ └─ layers_summary.py
-│ └─ train.py
+│  ├─ __main__.py
+│  ├─ config.py
+│  ├─ utils.py
+│  │
+│  ├─ data/
+│  │  └─ manifest_and_io.py
+│  │
+│  ├─ model/
+│  │  ├─ loader.py
+│  │  └─ layers_summary.py
+│  │
+│  └─ train.py
+│
+├─ scripts/
+│  ├─ package_workspace.py
+│  └─ run_train.sh
+│
+├─ metadata/
+│  ├─ layer_sizes_summary.csv
+│  ├─ size_estimates.csv
+│  ├─ size_estimates.json
+│  ├─ quantizable_layers_list.csv
+│  ├─ model_metadata.json
+│  ├─ tokenizer_sanity.json
+│  ├─ quant_test_report.json
+│  ├─ sample_layers.json
+│  └─ dataset_overview.json
+│
 └─ artifacts/
-└─ (generated files)
+   ├─ workspace_package.zip
+   ├─ logs/
+   └─ datasets/
+
 
 yaml
 Copy code
 
+> **Note**  
+> Large artifacts such as model weights (`*.wbin`), embeddings, adapters, or large datasets are **not versioned** and belong in the `artifacts/` directory or external storage.
+
 ---
 
-## 🛠 Installation
+## 🔧 Installation
 
-### 1. Create a virtual environment
+### **1. Create a virtual environment**
 ```bash
 python -m venv venv
-source venv/bin/activate   # Linux / macOS
+source venv/bin/activate   # macOS / Linux
 venv\Scripts\activate      # Windows
 2. Install dependencies
 bash
 Copy code
 pip install -r requirements.txt
-▶ Running the Project
-Demo Training Run
+▶ Usage
+Run the demo training pipeline
 bash
 Copy code
 python -m src --demo
-This will:
+This executes:
 
-Load the model & tokenizer
+Model + tokenizer loading
 
-Generate layer size summaries
+Layer size summary generation
 
-Create sample dataset
+Creation of sample JSONL dataset
 
-Build a manifest
+Manifest generation
 
-Package the Workspace
+Storage of metadata in /metadata and /artifacts
+
+Package the entire workspace
 bash
 Copy code
 python scripts/package_workspace.py
-Produces:
+Outputs:
 
 bash
 Copy code
 artifacts/workspace_package.zip
-🧩 Scripts
-run_train.sh
-Example shell script for running the demo or extending into full training.
-
-package_workspace.py
-Creates reproducible workspace packages for deployment or sharing.
-
-📦 Artifacts
-Generated files (manifests, layer summaries, packaged zips, demo files) are stored inside:
-
+Run from the shell script
+bash
 Copy code
-artifacts/
-This keeps the repository clean and ensures reproducibility.
+bash scripts/run_train.sh
+📦 Metadata Files Explained
+File	Description
+layer_sizes_summary.csv	Per-layer FP16 & estimated INT4 sizes
+size_estimates.json / csv	Total model memory estimates
+quantizable_layers_list.csv	Identified layers safe for quantization
+model_metadata.json	General model configuration metadata
+tokenizer_sanity.json	Tokenizer validation (vocab size, test samples)
+quant_test_report.json	Quantization verification summary
+dataset_overview.json	Summary of dataset structure (e.g., FLORES-200)
+sample_layers.json	Example of random layer structure stats
 
-🔧 Customization
-You can extend this template to:
+These files are intentionally small and version-controlled.
 
-Add real training datasets
+📚 Dataset Usage
+The project supports multilingual datasets such as:
 
-Implement LoRA / Adapters
+FLORES-200
 
-Add ONNX or int4 quantization pipelines
+Custom parallel corpora in JSONL format
 
-Integrate evaluation scripts
+Place any large dataset in:
 
-Deploy to edge devices
+bash
+Copy code
+artifacts/datasets/
+Only include small metadata files (e.g., dataset_overview.json) in the repository.
 
-📜 License
-MIT License. Feel free to use or modify this repository for research or production.
+🧩 Extending the Project
+You can easily add:
+
+Adapter-based fine-tuning (LoRA, IA3, etc.)
+
+Quantization-aware training
+
+Export to ONNX, TensorRT, or FPGA
+
+Evaluation scripts
+
+Model compression workflows
+
+The modular structure makes this straightforward.
+
+📄 License
+MIT License. You are free to use, modify, and distribute this project.
+
+🤝 Contributing
+Contributions are welcome!
+Feel free to open:
+
+Issues
+
+Pull requests
+
+Feature requests
+
+
+
+
+
+
+
+
+
+
 
