@@ -1,0 +1,2 @@
+total_params,bytes_fp16,bytes_int4_est,approx_base_int4_mb
+615073792,1230147584,307536896,293.2900390625
