@@ -1,0 +1,19 @@
+{
+  "model_name": "facebook/nllb-200-distilled-600M",
+  "architecture": "m2m_100",
+  "num_hidden_layers": 12,
+  "encoder_layers": 12,
+  "decoder_layers": 12,
+  "hidden_size": 1024,
+  "ffn_dim": null,
+  "num_attention_heads": 16,
+  "vocab_size": 256206,
+  "tokenizer_class": "NllbTokenizer",
+  "quantization_target_proposal": "INT4 per-channel symmetric (per-out-channel scales)",
+  "default_adapter_ranks_to_test": [
+    8,
+    16,
+    32
+  ],
+  "paper_reference": "/mnt/data/Bridging_the_Quality_Cliff__Efficient_Multilingual_NMT_at_the_Edge_via_Joint_Quantization_and_Dynamic_Adaptation.pdf"
+}

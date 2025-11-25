@@ -1,0 +1,152 @@
+{
+  "eng_Latn": {
+    "dev": {
+      "num_sentences": 997,
+      "min_tokens": 9,
+      "max_tokens": 80,
+      "mean_tokens": 30.99297893681043,
+      "median_tokens": 30.0,
+      "examples": [
+        "On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.",
+        "Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.",
+        "The JAS 39C Gripen crashed onto a runway at around 9:30 am local time (0230 UTC) and exploded, closing the airport to commercial flights.",
+        "The pilot was identified as Squadron Leader Dilokrit Pattavee.",
+        "Local media reports an airport fire vehicle rolled over while responding."
+      ]
+    },
+    "devtest": {
+      "num_sentences": 1012,
+      "min_tokens": 11,
+      "max_tokens": 86,
+      "mean_tokens": 32.277667984189726,
+      "median_tokens": 31.0,
+      "examples": [
+        "\"We now have 4-month-old mice that are non-diabetic that used to be diabetic,\" he added.",
+        "Dr. Ehud Ur, professor of medicine at Dalhousie University in Halifax, Nova Scotia and chair of the clinical and scientific division of the Canadian Diabetes Association cautioned that the research is still in its early days.",
+        "Like some other experts, he is skeptical about whether diabetes can be cured, noting that these findings have no relevance to people who already have Type 1 diabetes.",
+        "On Monday, Sara Danius, permanent secretary of the Nobel Committee for Literature at the Swedish Academy, publicly announced during a radio program on Sveriges Radio in Sweden the committee, unable to reach Bob Dylan directly about winning the 2016 Nobel Prize in Literature, had abandoned its efforts to reach him.",
+        "Danius said, \"Right now we are doing nothing. I have called and sent emails to his closest collaborator and received very friendly replies. For now, that is certainly enough.\""
+      ]
+    }
+  },
+  "rus_Cyrl": {
+    "dev": {
+      "num_sentences": 997,
+      "min_tokens": 9,
+      "max_tokens": 101,
+      "mean_tokens": 41.423269809428284,
+      "median_tokens": 39.0,
+      "examples": [
+        "В понедельник ученые из Медицинской школы Стэнфордского университета объявили об изобретении нового диагностического инструмента, который может сортировать клетки по их типу; это маленький чип, который можно напечатать, используя стандартный струйный принтер примерно за 1 цент США.",
+        "Ведущие исследователи утверждают, что он может помочь в раннем выявлении рака, туберкулеза, ВИЧ и малярии у пациентов в странах с низким уровнем дохода, где показатели выживаемости при таких болезнях, как рак молочной железы, могут быть в два раза ниже, чем в более богатых странах.",
+        "Приблизительно в 9:30 по местному времени (02:30 UTC) JAS 39C Gripen упал на взлетно-посадочную полосу и взорвался. Аэропорт пришлось закрыть для коммерческих рейсов.",
+        "Личность пилота была установлена. Им оказался командир эскадрильи Дилокрит Паттави.",
+        "Местные СМИ сообщают, что в аэропорту по пути на вызов перевернулась пожарная машина."
+      ]
+    },
+    "devtest": {
+      "num_sentences": 1012,
+      "min_tokens": 12,
+      "max_tokens": 107,
+      "mean_tokens": 42.205533596837945,
+      "median_tokens": 40.0,
+      "examples": [
+        "\"Теперь у нас есть четырёхмесячные мыши, у которых больше нет диабета\", — добавил он.",
+        "Согласно предупреждению доктора Эхуда Ура (Ehud Ur), профессора медицины в Университете Дэлхаузи в Галифаксе (Новая Шотландия) и председателя клинико-научного отдела Канадской диабетической ассоциации, исследования все еще находятся на начальной стадии.",
+        "Как и некоторые другие эксперты, он сомневается, что диабет излечим, отмечая, что эти открытия не относятся к людям, у которых уже развился диабет 1 типа.",
+        "В понедельник Сара Даниус, постоянный секретарь Нобелевского комитета по литературе при Шведской Академии, публично заявила во время передачи на шведской радиостанции Sveriges о том, что комитет, которому не удалось связаться с Бобом Диланом напрямую и сообщить ему, что он выиграл Нобелевскую премию по литературе за 2016 год, прекращает попытки выйти с ним на связь.",
+        "Даниус заявил: \"Сейчас мы ничего не делаем. Я звонил и отправлял электронные письма его ближайшему сотруднику и получал очень дружелюбные ответы. На данный момент этого, конечно, достаточно\"."
+      ]
+    }
+  },
+  "hin_Deva": {
+    "dev": {
+      "num_sentences": 997,
+      "min_tokens": 11,
+      "max_tokens": 105,
+      "mean_tokens": 37.65095285857573,
+      "median_tokens": 36.0,
+      "examples": [
+        "सोमवार को, स्टैनफ़ोर्ड यूनिवर्सिटी स्कूल ऑफ़ मेडिसिन के वैज्ञानिकों ने एक नए डायग्नोस्टिक उपकरण के आविष्कार की घोषणा की जो कोशिकाओं को उनके प्रकार के आधार पर छाँट सकता है: एक छोटी प्रिंट करने योग्य चिप जिसे स्टैण्डर्ड इंकजेट प्रिंटर का उपयोग करके लगभग एक अमेरिकी सेंट के लिए निर्मित किया जा सकता है.",
+        "शोधकर्ताओं ने कहा है कि यह अल्प आय वाले देशों में कैंसर, टीवी, एचआईवी और मलेरिया के रोगियों की आसानी से पहचान करेगा, जहाँ अमीर देशों की तुलना में स्तन कैंसर जैसी बीमारी में जीवित रहने की दर आधी हो सकती है.",
+        "स्थानीय समय (0230 UTC) के मुताबिक करीब 9:30 बजे JAS 39C Gripen रनवे पर धमाके के साथ दुर्घटनाग्रस्त हो गया, जिसकी वजह से वाणिज्यिक उड़ानों के लिए हवाई अड्डे को बंद कर दिया गया.",
+        "पायलट की पहचान स्क्वाड्रन लीडर दिलोकृत पटावी के रूप में की गई.",
+        "स्थानीय मीडिया ने बताया है कि कार्रवाई करने के दौरान एयरपोर्ट का अग्निशामक वाहन लुढ़क गया था."
+      ]
+    },
+    "devtest": {
+      "num_sentences": 1012,
+      "min_tokens": 13,
+      "max_tokens": 110,
+      "mean_tokens": 38.69762845849802,
+      "median_tokens": 37.0,
+      "examples": [
+        "उन्होंने कहा “कि अब हमारे पास 4 महीने उम्र वाले चूहे हैं जिन्हें मधुमेह नहीं है जो मधुमेह के रोगी थे। ”",
+        "डॉ. एहुड उर, नोवा स्कोटिया के हैलिफ़ैक्स में डलहौज़ी विश्वविद्यालय में चिकित्सा के प्रोफ़ेसर और कनाडाई डायबिटीज़ एसोसिएशन के नैदानिक ​​और वैज्ञानिक विभाग के अध्यक्ष ने आगाह किया कि शोध अभी भी अपने शुरुआती दिनों में है.",
+        "कुछ अन्य विशेषज्ञों की तरह, उन्हें इस बात पर संदेह है कि क्या मधुमेह को ठीक किया जा सकता है, यह देखते हुए कि इन निष्कर्षों की उन लोगों के लिए कोई प्रासंगिकता नहीं है जिन्हें पहले से ही टाइप 1 मधुमेह है.",
+        "सोमवार को स्वीडिश अकादमी में साहित्य के लिए नोबेल समिति के स्थायी सचिव, सारा डेनियस, स्वीडन समिति में सेवरिज रेडियो पर एक रेडियो कार्यक्रम के दौरान सार्वजनिक रूप से घोषणा की, कि साहित्य में 2016 के नोबेल पुरस्कार जीतने को लेकर सीधे बॉब डायलन तक पहुँचने में असमर्थ होकर, अपने प्रयासों को छोड़ चुके थे.",
+        "डेनियस ने कहा, “फ़िलहाल हम कुछ नहीं कर रहे हैं. मैंने अपने साथ काम करने वाले लोगों को ईमेल भेजे हैं और उसने उनके फ्रेंडली जवाब भेजे हैं. अभी के लिए, बस इतना ही बताना चाहूँगा.” "
+      ]
+    }
+  },
+  "deu_Latn": {
+    "dev": {
+      "num_sentences": 997,
+      "min_tokens": 12,
+      "max_tokens": 98,
+      "mean_tokens": 39.574724172517556,
+      "median_tokens": 38.0,
+      "examples": [
+        "Am Montag haben die Wisenschaftler der Stanford University School of Medicine die Erfindung eines neuen Diagnosetools bekanntgegeben, mit dem Zellen nach ihrem Typ sortiert werden können: ein winziger, ausdruckbarer Chip, der für jeweils etwa einen US-Cent mit Standard-Tintenstrahldruckern hergestellt werden kann.",
+        "Führende Forscher sagen, dass dies die Früherkennung von Krebs, Tuberkulose, HIV und Malaria für Patienten in einkommensschwachen Ländern fördern könnte, wo die Überlebensraten bei Krankheiten wie Brustkrebs teilweise nur halb so hoch sind wie in reicheren Ländern.",
+        "Der JAS 39C Gripen stürzte gegen 9:30 Uhr Ortszeit (02:30 UTC) auf eine Startbahn und explodierte, sodass der Flughafen für kommerzielle Flüge geschlossen werden musste.",
+        "Der Pilot wurde als Staffelführer Dilokrit Pattavee identifiziert.",
+        "Lokale Medien berichten, dass ein Feuerwehrwagen während der Rettungsaktion umkippte."
+      ]
+    },
+    "devtest": {
+      "num_sentences": 1012,
+      "min_tokens": 12,
+      "max_tokens": 106,
+      "mean_tokens": 41.16304347826087,
+      "median_tokens": 40.0,
+      "examples": [
+        "„Wir haben jetzt 4 Monate alte Mäuse, die Diabetes hatten und jetzt keinen mehr haben“, fügte er hinzu.",
+        "Dr. Ehud Ur, Professor für Medizin an der Dalhousie University in Halifax, Nova Scotia, und Vorsitzender der Abteilung für Klinik und Wissenschaft des Kanadischen Diabetesverbands gab zu bedenken, dass die Forschungsarbeit noch in den Kinderschuhen stecke.",
+        "Wie einige andere Experten zeigte er sich skeptisch, ob es möglich sei, Diabetes zu heilen, und wies darauf hin, dass die Befunde für Menschen, die bereits unter Typ-1-Diabetes litten, keine Bedeutung hätten.",
+        "Am Montag gab Sara Danius, Ständige Sekretärin des Literaturnobelpreiskomitees der Schwedischen Akademie in einer Radiosendung auf Sveriges Radio in Schweden bekannt, dass das Komitee seine Bemühungen eingestellt habe, Bob Dylan über seine Ehrung mit dem Literaturnobelpreis für Literator zu informieren, nachdem es nicht gelungen war, ihn persönlich zu erreichen.",
+        "Danius sagte: „Im Moment unternehmen wir nichts. Ich habe seinen engsten Mitarbeiter angerufen und ihm E-Mails geschickt und sehr freundliche Antworten erhalten. Das ist vorläufig genug.“"
+      ]
+    }
+  },
+  "spa_Latn": {
+    "dev": {
+      "num_sentences": 997,
+      "min_tokens": 10,
+      "max_tokens": 88,
+      "mean_tokens": 37.98094282848545,
+      "median_tokens": 37.0,
+      "examples": [
+        "El lunes, los científicos de la facultad de medicina de la Universidad de Stanford anunciaron el invento de una nueva herramienta de diagnóstico que puede catalogar las células según su tipo: un pequeñísimo chip que se puede imprimir y fabricar con impresoras de inyección de uso corriente, por un posible costo de, aproximadamente, un centavo de dólar por cada uno.",
+        "Los principales investigadores principales sostienen que esto puede permitir la detección precoz del cáncer, la tuberculosis, el VIH y la malaria en pacientes de países de bajos recursos, donde la tasa de supervivencia de enfermedades como el cáncer de mama puede ser la mitad de la de los países más avanzados.",
+        "El JAS 39C Gripen impactó contra una pista cerca de las 9:30 de la mañana hora local (0230 UTC) y explotó, lo que causó el cierre del aeropuerto para vuelos comerciales.",
+        "Se identificó al piloto como Dilokrit Pattavee, líder de escuadrón.",
+        "La prensa local informó que una patrulla de bomberos del aeropuerto volcó mientras prestaba servicio."
+      ]
+    },
+    "devtest": {
+      "num_sentences": 1012,
+      "min_tokens": 12,
+      "max_tokens": 99,
+      "mean_tokens": 39.48517786561265,
+      "median_tokens": 38.0,
+      "examples": [
+        "«Actualmente, tenemos ratones de cuatro meses de edad que antes solían ser diabéticos y que ya no lo son», agregó.",
+        "La investigación todavía se ubica en su etapa inicial, conforme indicara el Dr. Ehud Ur, docente en la carrera de medicina de la Universidad de Dalhousie, en Halifax, Nueva Escocia, y director del departamento clínico y científico de la Asociación Canadiense de Diabetes.",
+        "Al igual que otros especialistas, es escéptico acerca de si la diabetes tiene cura y remarca que estos descubrimientos no son relevantes para quienes que ya padecen de diabetes de tipo 1.",
+        "El lunes, Sara Danius, secretaria permanente del Comité por el Nobel de Literatura de la Academia Sueca, declaró públicamente en un programa radiofónico de Sveriges, en Suecia, que, al no poder contactar directamente con Bob Dylan para comunicarle el premio en Literatura 2016, el comité había abandonado sus esfuerzos por comunicarse con él.",
+        "Danius declaró: «Actualmente no estamos haciendo nada. Llamé y envié correos electrónicos a su asistente más cercano y recibí contestaciones muy cordiales. Por el momento, eso es sin dudas suficiente»."
+      ]
+    }
+  }
+}

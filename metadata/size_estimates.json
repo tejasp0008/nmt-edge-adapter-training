@@ -1,0 +1,5 @@
+{
+  "total_bytes_fp16": 1230147584,
+  "total_bytes_int4_estimate": 307536896,
+  "int4_MB": 293.2900390625
+}
