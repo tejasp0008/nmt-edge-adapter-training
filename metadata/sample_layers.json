@@ -1,6 +1,0 @@
-[
-  "model.shared.weight",
-  "model.encoder.layers.0.self_attn.k_proj.weight",
-  "model.encoder.layers.0.self_attn.v_proj.weight",
-  "model.encoder.layers.0.self_attn.q_proj.weight"
-]
