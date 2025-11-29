@@ -1,0 +1,15 @@
+{
+  "weights": [
+    {
+      "file": "weights/demo_layer.wbin",
+      "path": "/content/drive/MyDrive/Translation_fpga/step5_artifacts/weights/demo_layer.wbin",
+      "size_bytes": 64,
+      "sha256": "4fa580c4a9e6d5bd3b84a888ccc06f0ace99b8173bab77938185e1702b10bb47",
+      "header": {
+        "version": 1,
+        "out_dim": 8,
+        "in_dim": 7
+      }
+    }
+  ]
+}
